@@ -1,5 +1,61 @@
 
+(() => {
+    let a = document.getElementById("op-one").value;
+let b = document.getElementById("op-one").value;
+console.log(a,b)
+let Addition = (a, b) => {
+  if (typeof a == "number" && typeof b == "number") {
+    alert("veuillez entrez un numero");
+  } else {
+    alert(a + b);
+  }
+};
+let substraction = (a, b) => {
+  if (typeof a == "number" && typeof b == "number") {
+    alert("veuillez entrez un numero");
+  } else {
+    alert(a - b);
+  }
+};
+let multiplication = (a, b) => {
+  if (typeof a == "number" && typeof b == "number") {
+    alert("veuillez entrez un numero");
+  } else {
+    alert(a * b);
+  }
+};
+let division = (a, b) => {
+  if (typeof a == "number" && typeof b == "number") {
+    alert("veuillez entrez un numero");
+  } else {
+    alert(a / b);
+  }
+};
 
+// to get the value of an input: document.getElementById("element-id").value
+
+document.getElementById("addition").addEventListener("click", () => {
+  Addition(a, b);
+});
+
+    console.log(Addition(num1, num2));
+
+document.getElementById("substraction").addEventListener("click", () => {
+  // perform an substraction
+  substraction(a, b);
+});
+
+document.getElementById("multiplication").addEventListener("click", () => {
+  // perform an multiplication
+  multiplication(a, b);
+});
+
+document.getElementById("division").addEventListener("click", () => {
+  // perform an division
+  division(a, b);
+});
+})();
+/*
 (() => {
   // to get the value of an input: document.getElementById("element-id").value
   function isNumber(num1, num2) {
@@ -68,4 +124,3 @@
     division(a, b);
   });
 })();
-*/
